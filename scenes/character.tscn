@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://v5e087t5x0hc"]
+[gd_scene load_steps=6 format=3 uid="uid://v5e087t5x0hc"]
 
 [ext_resource type="Texture2D" uid="uid://dy1hash2nb4xu" path="res://Sprites/Dragon.png" id="1_2os2y"]
+[ext_resource type="Script" path="res://scenes/character.gd" id="1_27vqg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idavu"]
 bg_color = Color(0.0196078, 0.0196078, 0.0196078, 1)
@@ -22,8 +23,9 @@ outline_size = 4
 outline_color = Color(0.0235294, 0.0235294, 0.0235294, 1)
 
 [node name="Character" type="Node2D"]
+script = ExtResource("1_27vqg")
 
-[node name="Dragon" type="Sprite2D" parent="."]
+[node name="Visual" type="Sprite2D" parent="."]
 texture = ExtResource("1_2os2y")
 
 [node name="HealthBar" type="ProgressBar" parent="."]
